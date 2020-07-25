@@ -4,12 +4,7 @@ function ChooseLink() {
   var url = links[Math.floor(Math.random()*links.length)];
 
   //Uncomment to open on another tab
-  //window.open(url, '_blank');
+  window.open(url);
 
   return url
 }
-
-var url = ChooseLink()
-console.log(url)
-var frame = document.getElementsByClassName("iframe-frame")
-frame.src = url
