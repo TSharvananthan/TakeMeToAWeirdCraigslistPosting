@@ -3,12 +3,13 @@ var links = ['https://www.craigslist.org/about/best/htf/7100786040.html', 'https
 function ChooseLink() {
   var url = links[Math.floor(Math.random()*links.length)];
 
-  // Uncomment to open on another tab
+  //Uncomment to open on another tab
   //window.open(url, '_blank');
 
   return url
 }
 
 var url = ChooseLink()
-var frame = document.getElementsByClassName("frame")
+console.log(url)
+var frame = document.getElementsByClassName("iframe-frame")
 frame.src = url
